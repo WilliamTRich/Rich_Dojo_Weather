@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 7%;
+    background-color: #9FC5F8;
+    color: white;
+    padding: 1rem 10rem;
+}
+
+nav > h1 {
+    font-size: 3rem;
+    flex: 1;
+}
+
+.locations {
+    display: flex;
+    flex: 1;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* Body Header */
+
+main {
+    padding: 1rem 10rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 3px solid black;
+}
+
+.tempSelect {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+/* Body Content */
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    background-color: #EEEEEE;
+    align-items: center;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.temperature-container {
+    display: flex;
+    gap: 5rem;
+}
+
+.red{color:red;}
+.blue{color:blue;}
+
+/* Footer */
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    left: 10rem;
+    right: 10rem;
+    border: 4px solid black;
+    align-items: center;
+    padding: 1rem;
+    gap: 4rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 2rem;
+}
+
+footer > button {
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: #9FC5F8;
+    border: 3px solid black;
+    box-shadow: 4px 4px 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}

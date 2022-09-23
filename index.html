@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <nav>
+        <h1>Dojo Weather</h1>
+        <div class="locations">
+            <h2 onclick="changeLocation()">Burbank</h2>
+            <h2 onclick="changeLocation()">Chicago</h2>
+            <h2 onclick="changeLocation()">Dallas</h2>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <h2>San Jose</h2>
+            <div class="tempSelect">
+                <p>show temperature in </p>
+                <select name="tempSelect" id="tempSelect" onchange="tempSelect(this)">
+                    <option value="celsuis">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </header>
+        <section>
+            <div class="cards">
+                <h3>Today</h3>
+                <img src="./assets/assets/some_rain.png" alt="Some rain">
+                <p>some rain</p>
+                <div class="temperature-container">
+                    <p class="red">24</p>
+                    <p class="blue">18</p>
+                </div>
+            </div>
+            <div class="cards">
+                <h3>Tomorrow</h3>
+                <img src="./assets/assets/some_sun.png" alt="Some sun">
+                <p>some sun</p>
+                <div class="temperature-container">
+                    <p class="red">27</p>
+                    <p class="blue">19</p>
+                </div>
+            </div>
+            <div class="cards">
+                <h3>Friday</h3>
+                <img src="./assets/assets/some_clouds.png" alt="Some clouds">
+                <p>some clouds</p>
+                <div class="temperature-container">
+                    <p class="red">21</p>
+                    <p class="blue">16</p>
+                </div>
+            </div>
+            <div class="cards">
+                <h3>Saturday</h3>
+                <img src="./assets/assets/some_sun.png" alt="Some sun">
+                <p>some sun</p>
+                <div class="temperature-container">
+                    <p class="red">26</p>
+                    <p class="blue">21</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <img src="./assets/assets/cookie.png" alt="cookie">
+            <div class="footer-container">
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize
+                    content and ads, to provide social media features and to
+                    analyse our traffic. <a href="#"> Read more...</a>
+                </p>
+            </div>
+            <button onclick="cookieAccept(this)">I accept</button>
+        </footer>
+    </main>
+</body>
+</html>
